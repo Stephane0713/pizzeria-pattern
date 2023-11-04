@@ -4,10 +4,10 @@ import { Pizza } from "./PizzaBuilder";
 describe("PizzaBuilder", () => {
   describe("testBuildPizza", () => {
     // TODO: Tester la construction d'une pizza avec le builder
-    test("Pizza", () => {
+    test("", () => {
       const pizza: Pizza = Pizza.builder.build();
 
-      expect(pizza).toBeInstanceOf(Pizza);
+      expect(pizza).toBe("");
     });
   });
 

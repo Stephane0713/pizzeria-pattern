@@ -1,10 +1,13 @@
 import { describe, expect, test } from "vitest";
+import { Pizza } from "./PizzaBuilder";
 
 describe("PizzaBuilder", () => {
   describe("testBuildPizza", () => {
     // TODO: Tester la construction d'une pizza avec le builder
-    test("", () => {
-      expect("").toBe("");
+    test("Pizza", () => {
+      const pizza: Pizza = Pizza.builder.build();
+
+      expect(pizza).toBeInstanceOf(Pizza);
     });
   });
 

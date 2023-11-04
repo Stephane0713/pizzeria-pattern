@@ -1,10 +1,4 @@
-export class Pizza {
-  public static builder: PizzaBuilder;
-
-  // Attributs (pâte, sauce, garnitures, etc.)
-  // TODO: Créer des setters pour tous les attributs afin de pouvoir les modifier via le builder
-}
-
+// Cette class doit rester privée.
 class PizzaBuilder {
   // Attributs pour construire une Pizza
 
@@ -17,6 +11,13 @@ class PizzaBuilder {
 
     return new Pizza();
   }
+}
+
+export class Pizza {
+  public static builder: PizzaBuilder = new PizzaBuilder();
+
+  // Attributs (pâte, sauce, garnitures, etc.)
+  // TODO: Créer des setters pour tous les attributs afin de pouvoir les modifier via le builder
 }
 
 // Exemple d'utilisation du builder (à compléter par les étudiants)
